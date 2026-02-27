@@ -1,0 +1,33 @@
+Project 3 - Turing Machine Simulator
+Author: Abdulalim Ciftci
+
+1. Description
+---------------------------
+This is a Turing Machine simulator for CS 361. The program reads a file 
+(like file2.txt), loads the states and runs the simulation. 
+Finally, it prints the visited parts of the tape.
+
+2. Files
+---------------------------
+- tm/TMSimulator.java: The main class. It reads the input file.
+- tm/TM.java: The logic of the machine (tape and head).
+- tm/TMState.java: This class holds the transition rules.
+
+3. How to Compile and Run
+---------------------------
+You need to be in the main project folder.
+
+To compile:
+javac tm/*.java
+
+To run:
+java tm.TMSimulator file2.txt
+java tm.TMSimulator file5.txt
+
+4. Implementation
+---------------------------
+I used a HashMap for the tape because the tape can go to negative numbers. 
+Also, HashMap is faster than ArrayList for this project. 
+For the transitions, I used normal arrays inside the states because 
+it is simple and works fast.
+The simulation stops when the machine reaches the halting state.
