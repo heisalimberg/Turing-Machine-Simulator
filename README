@@ -1,9 +1,9 @@
-Project 3 - Turing Machine Simulator
+Project: Turing Machine Simulator
 Author: Abdulalim Ciftci
 
 1. Description
 ---------------------------
-This is a Turing Machine simulator for CS 361. The program reads a file 
+This is a Turing Machine simulator. The program reads a file 
 (like file2.txt), loads the states and runs the simulation. 
 Finally, it prints the visited parts of the tape.
 
@@ -30,4 +30,5 @@ I used a HashMap for the tape because the tape can go to negative numbers.
 Also, HashMap is faster than ArrayList for this project. 
 For the transitions, I used normal arrays inside the states because 
 it is simple and works fast.
+
 The simulation stops when the machine reaches the halting state.
